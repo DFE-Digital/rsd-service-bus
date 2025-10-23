@@ -1,0 +1,16 @@
+name: Continuous integration
+on:
+  pull_request:
+jobs:
+  tflint:
+    name: tflint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v5
+      - name: Setup TFLint
+        uses: terraform-linters/setup-tflint@v5
+        with:
+          tflint_version: v0.59.1
+      - name: Run TFLint
+        run: tflint -f compact
