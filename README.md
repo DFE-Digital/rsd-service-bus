@@ -1,28 +1,18 @@
 # <REPLACE WITH USEFUL TERRAFORM DESCRIPTION>
 
-[![Terraform CI](./actions/workflows/continuous-integration-terraform.yml/badge.svg?branch=main)](./actions/workflows/continuous-integration-terraform.yml?branch=main)
-[![GitHub release](https://img.shields.io/github/release/<ORG>/<REPO>.svg)](./releases)
+[![Terraform CI](https://github.com/DFE-Digital/rsd-service-bus/actions/workflows/continuous-integration-terraform.yml/badge.svg?branch=main)](https://github.com/DFE-Digital/rsd-service-bus/actions/workflows/continuous-integration-terraform.yml?branch=main)
+[![GitHub release](https://img.shields.io/github/release/DFE-Digital/rsd-service-bus.svg)](https://github.com/DFE-Digital/rsd-service-bus/releases)
 
-This <module/project> creates and manages <REPLACE WITH MAIN RESOURCE NAMES/URLS>.
+Terraform project for deploying Service Bus, Topics and subscriptions within RSD 
 
 ## Usage
-
-Example module usage:
-
-```hcl
-module "<MODULE NAME>" {
-  source  = "github.com/<ORG>/<MODULE NAME>?ref=v<VERSION>"
-
-  environment = "dev/staging/test/pre-prod/prod/post-prod"
-}
-```
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.3 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.13.4 |
 
 ## Providers
 
