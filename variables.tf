@@ -49,6 +49,9 @@ variable "service_bus_config" {
         send   = bool
         manage = bool
       }), { listen = true, send = true, manage = false })
+      public_access_enabled    = optional(bool, false)
+      ipv4_access_list         = optional(list(string), [])
+      trusted_services_allowed = optional(bool, false)
       topics = map(object({
         subscriptions = map(object({
           sql_filter = optional(string, "")
